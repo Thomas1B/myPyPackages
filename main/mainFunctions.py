@@ -174,7 +174,7 @@ def see_callerLoc(do_not_delete, s=None, full=False, quit=False):
     print(txt, '\n')
     if s:  # if user passed extra text to print.
         print(s, '\n')
-    if quit == True:
+    elif quit == True:
         exit(True)
 
 
