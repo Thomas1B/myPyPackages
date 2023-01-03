@@ -21,6 +21,26 @@ def getDateRange(x, start, end):
     return tmp[tmp.times < end]
 
 
+def getRange(x, start, end):
+    '''
+    Function to return data within a certain range.
+
+    Parameters:
+        x: array_like element
+        start (float): start of range.
+        end (float): end date of range.
+            See myDates.DateStrtoNum()
+
+    Returns:
+        same type 'x' is.
+    '''
+    tmp = x[x >= start]
+    return tmp[tmp < end]
 
 
-func_list = [getDateRange]
+
+
+func_list = [
+    getDateRange,
+    getRange
+    ]

@@ -14,13 +14,20 @@ from .main import (
     delete
 )
 
-from .myData import (func_list,
-                     getDateRange)
+from .myData import (
+    func_list,
+    getDateRange,
+    getRange
+    )
 
-from .myStats import (func_list,
-                      StudentCI)
+from .myStats import (
+    func_list,
+    StudentCI
+    )
 
-from .mySignal import (func_list,
-                       GetNS_NFFT,
-                       psd_CI,
-                       myWelch)
+from .mySignal import (
+    func_list,
+    GetNS_NFFT,
+    psd_CI,
+    myWelch
+    )
