@@ -8,7 +8,7 @@ Modules used throughout these custom packaces are:<br>
 Make sure these are installed on your computer.
 
 <br>
-Run the script `See_Info.py` to see available functions and docstring,
+Download all the folders and files, then run the script `See_Info.py` to see available functions and docstring,
 <br><br>
 
 I initially started to create these modules as I notice myself repeating a lot of code throughout my school work and projects. Hope you find them as useful as I do!
