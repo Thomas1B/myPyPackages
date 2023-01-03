@@ -10,7 +10,7 @@ from myPrints import color_txt
 def show_modules(moduleName):
     '''
     Function to print names of modules
-        (also prints docstring of function if passed a function name)
+        (prints docstring of function if passed a function name)
 
     Parameter:
         modules (str): name of module (or function)
