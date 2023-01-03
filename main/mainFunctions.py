@@ -175,7 +175,6 @@ def see_callerLoc(do_not_delete, s=None, full=False, quit=False):
     if s:  # if user passed extra text to print.
         print(s, '\n')
     if quit == True:
-        print("Some IDEs may need to closed and reopen to start the program...", '\n')
         exit(True)
 
 
