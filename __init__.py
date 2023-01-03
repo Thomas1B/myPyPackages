@@ -2,7 +2,6 @@ from .main import (
     func_list,
     showModules,
     see_callerLoc,
-    clear_screen,
     quit_program,
 )
 
@@ -35,5 +34,6 @@ from .mySystem import (
 from .myPrints import (
     color_txt,
     print_color,
-    warning
+    warning,
+    clear_screen
 )
