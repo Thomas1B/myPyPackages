@@ -99,7 +99,4 @@ func_list = [
     see_callerLoc,
     clear_screen,
     quit_program,
-    color_txt,
-    print_color,
-    warning,
 ]

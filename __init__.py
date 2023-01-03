@@ -4,12 +4,7 @@ from .main import (
     see_callerLoc,
     clear_screen,
     quit_program,
-    color_txt,
-    print_color,
-    warning
 )
-
-
 
 from .myData import (
     func_list,
@@ -30,10 +25,15 @@ from .mySignal import (
     myWelch
 )
 
-
 from .mySystem import (
     move_file,
     get_dirs,
     get_files,
     delete
+)
+
+from .myPrints import (
+    color_txt,
+    print_color,
+    warning
 )
