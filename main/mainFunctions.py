@@ -7,13 +7,27 @@ import inspect
 from myPrints import color_txt
 
 
+def show_docString(function):
+    '''
+    Function print docstrings of a function.
+
+    Parameter: 
+        function: a function
+    '''
+    if callable(function):
+        print("Docstring for {}:".format(function.__name__))
+        print(function.__doc__)
+    else:
+        print(f'"{function}" is not a function. Please fix...\n')
+
+
 def show_modules(moduleName):
     '''
     Function to print names of modules
         (prints docstring of function if passed a function)
 
     Parameter:
-        modules (module or function): name of module (or function)
+        modules (module): name of module
 
     Returns:
         prints list of functions
@@ -21,8 +35,7 @@ def show_modules(moduleName):
     '''
 
     if callable(moduleName):
-        print("Docstring for {}:".format(moduleName.__name__))
-        print(moduleName.__doc__)
+        show_docString(moduleName)
     else:
         print(f'List of available functions in "{moduleName.__name__}":')
         for i, func in enumerate(moduleName.func_list):
@@ -64,6 +77,7 @@ def see_callerLoc(do_not_delete, s=None, full=False, quit=False):
 
 
 func_list = [
+    show_docString,
     show_modules,
     see_callerLoc,
 ]
