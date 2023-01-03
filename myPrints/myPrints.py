@@ -117,9 +117,35 @@ def clear_screen():
     '''
     os.system('clear')
 
+
+def quit_program(check=False, delay=0):
+    '''
+    Function to terminate program.
+
+    Parameter:
+        check, optional (bool) [default False]: double check if user really wants to quit the program.
+        delay, opional (float) [default 0]: delay time to simulate a shut down sequence. 
+    '''
+    user = input('Exit program? (y/n): ')
+    if user == 'y':
+        if check:
+            user = input("Are you sure? (y/n): ")
+            if user == 'y':
+                print("\nProgram Closing...")
+                time.sleep(delay)
+                exit(True)
+        else:
+            print("\nProgram Closing...")
+            time.sleep(delay)
+            exit(True)
+    else:
+        return False
+
+
 func_list = [
     color_txt,
     print_color,
     warning,
-    clear_screen()
+    clear_screen,
+    quit_program
 ]

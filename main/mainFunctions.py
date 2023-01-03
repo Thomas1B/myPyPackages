@@ -62,32 +62,8 @@ def see_callerLoc(do_not_delete, s=None, full=False, quit=False):
         exit(True)
 
 
-def quit_program(check=False, delay=0):
-    '''
-    Function to terminate program.
-
-    Parameter:
-        check, optional (bool) [default False]: double check if user really wants to quit the program.
-        delay, opional (float) [default 0]: delay time to simulate a shut down sequence. 
-    '''
-    user = input('Exit program? (y/n): ')
-    if user == 'y':
-        if check:
-            user = input("Are you sure? (y/n): ")
-            if user == 'y':
-                print("\nProgram Closing...")
-                time.sleep(delay)
-                exit(True)
-        else:
-            print("\nProgram Closing...")
-            time.sleep(delay)
-            exit(True)
-    else:
-        return False
-
 
 func_list = [
     showModules,
     see_callerLoc,
-    quit_program,
 ]
