@@ -13,7 +13,7 @@ def show_modules(moduleName):
         (prints docstring of function if passed a function)
 
     Parameter:
-        modules (str): name of module (or function)
+        modules (module or function): name of module (or function)
 
     Returns:
         prints list of functions
