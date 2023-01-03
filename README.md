@@ -3,7 +3,8 @@
 ## General use custom python packages for school and personal projects
 <br>
 
-Modules used throughout these custom packaces are: `numpy`, `scipy`, `pandas`, `os`, `time`, `shutli`, and `termcolor`.
+Modules used throughout these custom packaces are:<br>
+`numpy`, `scipy`, `pandas`, `os`, `time`, `shutli`, and `termcolor`.
 
 <br>
 Follow the example below to see available functions in a given module.
