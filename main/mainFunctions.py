@@ -200,6 +200,8 @@ def print_color(s, color=None, highlight=None, attrs=None):
 def warning(color='red', highlight='yellow'):
     '''
     Function to print a color warning banner.
+
+    Initially designed for debugging.
     '''
     print_color("*** Warning ***", color=color, highlight=highlight)
 
