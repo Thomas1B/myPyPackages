@@ -3,7 +3,7 @@ Py Script to show functions in each module
 '''
 
 import numpy as np
-from main import show_modules
+from main import show_modules, show_docString
 from myPrints import clear_screen, quit_program
 
 # These need to be identical.
@@ -38,6 +38,32 @@ def show_functions(id):
     show_modules(name)
     print("\n")
 
+def show_doc(id):
+    '''
+    Function to show doc strings.
+    '''
+
+    module = sets[id][1]
+
+    # for _ in module.func_list:
+    print('\nEnter the number of the function to see its docstring.')
+    print("Leave blank to skip\n")
+    user = input('Command: ')
+    if user:
+        print('\n------------------------------------')
+        show_docString(module.func_list[int(user)])
+        print('------------------------------------\n')
+        user = input("See more docstrings? (y/n): ")
+        if user == "y":
+            txt = '\n'
+            for i, func in enumerate(module.func_list):
+                txt += f'{i} - {func.__name__}\n'
+            print(txt)
+            show_doc(id)
+        # else: break
+        else: print()
+    clear_screen()
+
 # ******************************* ******************************* 
 
 
@@ -51,6 +77,7 @@ while(True):
         case "0":
             clear_screen()
             show_functions(0)
+            show_doc(0)
         case "1":
             clear_screen()
             show_functions(1)
