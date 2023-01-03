@@ -4,7 +4,7 @@
 <br>
 
 Modules used throughout these custom packaces are:<br>
-`numpy, scipy, pandas, os, time, shutli, termcolor'
+`numpy, scipy, pandas, os, time, shutli, termcolor`
 
 <br>
 Follow the example below to see available functions in a given module.
