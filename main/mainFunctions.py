@@ -202,30 +202,6 @@ def quit_program(check=False):
         return False
 
 
-def check_matches(f1, f2):
-    '''
-    Function to check if there are any matching elements between 2 array_like items.
-        (auto converts f1, f2 to array_type if they are not passed as one)
-
-    Parameter:
-        f1, f2: array_like items
-    Returns 3 arrays:
-                In both f1 and f2.
-                f1 only.
-                f2 only.
-    '''
-    ids = np.in1d(f1, f2)
-    if type(f1) == list or tuple:
-        f1 = np.array(f1)
-    if type(f2) == list or tuple:
-        f2 = np.array(f2)
-
-    both = f1[np.where(ids == True)]
-    f1_only = f1[np.where(ids == False)]
-    f2_only = f2[np.where(np.in1d(f2, f1) == False)]
-    return both, f1_only, f2_only
-
-
 func_list = [
     showModules,
     see_callerLoc,
