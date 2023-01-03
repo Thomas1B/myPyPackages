@@ -24,7 +24,7 @@ def show_modules(moduleName):
         print("Docstring for {}:".format(moduleName.__name__))
         print(moduleName.__doc__)
     else:
-        print("List of available functions in {}".format(moduleName.__name__))
+        print(f'List of available functions in "{moduleName.__name__}":')
         for i, func in enumerate(moduleName.func_list):
             print("   {}: {}".format(i+1, func.__name__))
 
