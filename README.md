@@ -4,21 +4,11 @@
 <br>
 
 Modules used throughout these custom packaces are:<br>
-`numpy, scipy, pandas, os, time, shutli, termcolor`
+`numpy, scipy, pandas, os, time, shutli, termcolor`<br>
+Make sure these are installed on your computer.
 
 <br>
-Follow the example below to see available functions in a given module.
- <br> Example Below:<br>
-
-```py
-from myPyPackages import main
-
-main.showModule(module_name)
-
-# Prints available functions, then use
-
-module_name.function? # to see the functions docstring.
-```
-<br>
+Run the script `See_Functions_Modules.py` to see available functions and docstring,
+<br><br>
 
 I initially started to create these modules as I notice myself repeating a lot of code throughout my school work and projects. Hope you find them as useful as I do!
