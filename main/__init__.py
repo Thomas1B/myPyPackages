@@ -7,9 +7,5 @@ from .mainFunctions import (
     color_txt,
     print_color,
     warning,
-    get_files,
-    get_dirs,
-    check_matches,
-    move_file,
-    delete
+    check_matches
 )
