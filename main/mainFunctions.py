@@ -1,14 +1,13 @@
 # Modules for master functions.
 
 import numpy as np
-from colorama import init, Style, Fore, Back
 import os
 from os import listdir
 from os.path import isfile, isdir, join, exists
 import time
 import shutil
 import inspect
-from termcolor import colored, cprint
+from termcolor import colored
 
 
 
