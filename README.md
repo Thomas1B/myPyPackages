@@ -4,7 +4,8 @@
 <br>
 
 Modules used throughout these custom packaces are:<br>
-`numpy, scipy, pandas, os, time, shutli, termcolor`
+`numpy, scipy, pandas, os, time, shutli, termcolor`<br>
+Make sure these are installed on your computer.
 
 <br>
 Run the script `See_Functions_Modules.py` to see available functions and docstring,
