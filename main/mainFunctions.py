@@ -210,5 +210,4 @@ func_list = [
     color_txt,
     print_color,
     warning,
-    check_matches,
 ]

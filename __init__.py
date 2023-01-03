@@ -6,8 +6,7 @@ from .main import (
     quit_program,
     color_txt,
     print_color,
-    warning,
-    check_matches
+    warning
 )
 
 
@@ -15,7 +14,8 @@ from .main import (
 from .myData import (
     func_list,
     getDateRange,
-    getRange
+    getRange,
+    check_matches
 )
 
 from .myStats import (

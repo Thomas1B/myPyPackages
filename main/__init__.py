@@ -7,5 +7,4 @@ from .mainFunctions import (
     color_txt,
     print_color,
     warning,
-    check_matches
 )

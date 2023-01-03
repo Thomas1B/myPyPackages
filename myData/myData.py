@@ -65,5 +65,6 @@ def check_matches(f1, f2):
 
 func_list = [
     getDateRange,
-    getRange
+    getRange,
+    check_matches
 ]
