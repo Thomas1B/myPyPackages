@@ -1,6 +1,6 @@
 from .mainFunctions import (
     func_list,
-    showModules,
+    show_modules,
     see_callerLoc,
     color_txt
 )

@@ -7,7 +7,7 @@ import inspect
 from myPrints import color_txt
 
 
-def showModules(moduleName):
+def show_modules(moduleName):
     '''
     Function to print names of modules
         (also prints docstring of function if passed a function name)
