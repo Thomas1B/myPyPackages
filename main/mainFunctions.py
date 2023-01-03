@@ -39,7 +39,7 @@ def show_modules(moduleName):
     else:
         print(f'List of available functions in "{moduleName.__name__}":')
         for i, func in enumerate(moduleName.func_list):
-            print("   {}: {}".format(i+1, func.__name__))
+            print("   {}: {}".format(i, func.__name__))
 
 
 def see_callerLoc(do_not_delete, s=None, full=False, quit=False):
