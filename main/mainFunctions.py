@@ -4,7 +4,7 @@ import numpy as np
 import time
 import os
 import inspect
-from termcolor import colored
+from myPrints import color_txt
 
 
 
