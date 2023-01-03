@@ -1,5 +1,6 @@
 from termcolor import colored
 import os
+import time
 
 
 def color_txt(s, color=None, highlight=None, attrs=None):
