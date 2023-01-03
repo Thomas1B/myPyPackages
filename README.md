@@ -6,7 +6,7 @@
 Modules used throughout these custom packaces are: `numpy`, `scipy`, `pandas`, `os`, `time`, `shutli`, and `termcolor`.
 
 <br>
-Import `main`, then use `showModules` and pass it a module name to see a list of available functions.
+Follow the example below to see available functions in a given module.
  <br> Example Below:<br>
 
 ```py
