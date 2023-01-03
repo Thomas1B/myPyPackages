@@ -1,10 +1,9 @@
 # Modules for master functions.
 
 import numpy as np
-import os
-from os import listdir
-from os.path import isfile, isdir, join, exists
+
 import time
+import os
 import shutil
 import inspect
 from termcolor import colored
