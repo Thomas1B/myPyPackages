@@ -64,6 +64,6 @@ def see_callerLoc(do_not_delete, s=None, full=False, quit=False):
 
 
 func_list = [
-    showModules,
+    show_modules,
     see_callerLoc,
 ]
