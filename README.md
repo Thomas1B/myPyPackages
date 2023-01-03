@@ -8,6 +8,6 @@ Modules used throughout these custom packaces are:<br>
 
 <br>
 Run the script `See_Functions_Modules.py` to see available functions and docstring,
-<br>
+<br><br>
 
 I initially started to create these modules as I notice myself repeating a lot of code throughout my school work and projects. Hope you find them as useful as I do!
