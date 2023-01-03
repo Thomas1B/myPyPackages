@@ -176,7 +176,7 @@ def see_callerLoc(do_not_delete, s=None, full=False, quit=False):
         print(s, '\n')
     if quit == True:
         print("Some IDEs may need to closed and reopen to start the program...", '\n')
-        os._exit(os.X_OK)
+        exit(True)
 
 
 def quit_program(check=False):
