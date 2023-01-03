@@ -7,14 +7,6 @@ import inspect
 from myPrints import color_txt
 
 
-
-def clear_screen():
-    '''
-    Function to clear the terminal screen.
-    '''
-    os.system('clear')
-
-
 def showModules(moduleName):
     '''
     Function to print names of modules
@@ -97,6 +89,5 @@ def quit_program(check=False, delay=0):
 func_list = [
     showModules,
     see_callerLoc,
-    clear_screen,
     quit_program,
 ]

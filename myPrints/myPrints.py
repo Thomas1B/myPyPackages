@@ -1,5 +1,5 @@
 from termcolor import colored
-
+import os
 
 
 def color_txt(s, color=None, highlight=None, attrs=None):
@@ -111,9 +111,15 @@ def warning(color='red', highlight='yellow'):
     print_color("*** Warning ***", color=color, highlight=highlight)
 
 
+def clear_screen():
+    '''
+    Function to clear the terminal screen.
+    '''
+    os.system('clear')
 
 func_list = [
     color_txt,
     print_color,
-    warning
+    warning,
+    clear_screen()
 ]
