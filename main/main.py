@@ -13,8 +13,10 @@ def show_docString(function):
         function: a function
     '''
     if callable(function):
-        print("Docstring for {}:".format(function.__name__))
+        print(f'\nDocstring for "{color_txt(function.__name__, color="cyan")}":')
+        print('------------------------------------')
         print(function.__doc__)
+        print('------------------------------------\n')
     else:
         print(f'"{function}" is not a function. Please fix...\n')
 

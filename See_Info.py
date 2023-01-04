@@ -55,9 +55,7 @@ def show_doc(id):
     print("Leave blank to skip\n")
     user = input('Command: ')
     if user:
-        print('\n------------------------------------')
         show_docString(module.func_list[int(user)])
-        print('------------------------------------\n')
         user = input("See more docstrings? (y/n): ")
         if user == "y":
             txt = '\n'
