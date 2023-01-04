@@ -1,4 +1,6 @@
-
+'''
+Module for system related things such as file handling.
+'''
 
 import numpy as np
 import os
