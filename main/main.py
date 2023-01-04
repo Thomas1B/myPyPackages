@@ -34,7 +34,7 @@ def show_modules(moduleName):
          (or docstring of a function)
     '''
 
-    if callable(moduleName):
+    if callable(moduleName): # then it's a function
         show_docString(moduleName)
     else:
         print(f'List of available functions in "{moduleName.__name__}":')
