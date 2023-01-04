@@ -2,7 +2,15 @@
 
 import numpy as np
 import inspect
-from ..myPrints import color_txt
+
+try:
+    from .myPrints import color_txt
+except:
+    pass
+try:
+    from ..myPrints import color_txt
+except:
+    pass
 
 
 def show_docString(function):
