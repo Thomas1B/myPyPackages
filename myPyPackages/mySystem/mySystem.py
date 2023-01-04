@@ -7,7 +7,7 @@ import os
 from os import listdir
 from os.path import isfile, isdir, join, exists
 import shutil
-from myPrints import color_txt, print_color, warning
+from ..myPrints import color_txt, print_color, warning
 
 
 def move_file(old_dir, new_dir, file, auto_make=False, check_move=True, remove=True):

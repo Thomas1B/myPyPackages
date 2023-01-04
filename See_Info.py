@@ -3,18 +3,18 @@ Py Script to show functions in each module
 '''
 
 import numpy as np
-from main import show_modules, show_docString
-from myPrints import clear_screen, quit_program
+from myPyPackages.main import show_modules, show_docString
+from myPyPackages.myPrints import clear_screen, quit_program
 
 # ******************************* *******************************
 
 # These need to be identical.
-import main
-import myData
-import myPrints
-import mySignal
-import myStats
-import mySystem
+from myPyPackages import main
+from myPyPackages import myData
+from myPyPackages import myPrints
+from myPyPackages import mySignal
+from myPyPackages import myStats
+from myPyPackages import mySystem
 modules = [main, myData, myPrints, mySignal, myStats, mySystem]
 
 

@@ -2,7 +2,7 @@
 
 import numpy as np
 import inspect
-from myPrints import color_txt
+from ..myPrints import color_txt
 
 
 def show_docString(function):
