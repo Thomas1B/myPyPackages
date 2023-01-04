@@ -80,7 +80,7 @@ def color_txt(s, color=None, highlight=None, attrs=None):
     return t
 
 
-def print_color(s, color=None, highlight=None, attrs=None):
+def print_color(s, color=None, highlight=None, attrs=None, **kwargs):
     '''
     Function to print color text using the color_txt function.
 
@@ -100,7 +100,7 @@ def print_color(s, color=None, highlight=None, attrs=None):
             print_color('Hello, World!', 'red', 'blue', ['bold', 'blink'])
     '''
     t = color_txt(s=s, color=color, highlight=highlight, attrs=attrs)
-    print(t)
+    print(t, **kwargs)
 
 
 def warning(color='red', highlight='yellow'):
