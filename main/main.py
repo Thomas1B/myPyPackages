@@ -1,10 +1,8 @@
 # Modules for master functions.
 
 import numpy as np
-import time
-import os
 import inspect
-from myPrints import color_txt
+from ..myPrints import color_txt
 
 
 def show_docString(function):
@@ -79,5 +77,5 @@ def see_callerLoc(do_not_delete, s=None, full=False, quit=False):
 func_list = [
     show_docString,
     show_modules,
-    see_callerLoc,
+    see_callerLoc
 ]

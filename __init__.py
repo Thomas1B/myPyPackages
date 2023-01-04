@@ -2,7 +2,7 @@ from .main import (
     func_list,
     show_docString,
     show_modules,
-    see_callerLoc,
+    see_callerLoc
 )
 
 from .myData import (
@@ -25,6 +25,7 @@ from .mySignal import (
 )
 
 from .mySystem import (
+    func_list,
     move_file,
     get_dirs,
     get_files,
