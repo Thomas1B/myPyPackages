@@ -37,7 +37,7 @@ def show_modules(moduleName):
     if callable(moduleName): # then it's a function
         show_docString(moduleName)
     else:
-        print(f'List of available functions in "{moduleName.__name__}":')
+        print(f'List of available functions in "{color_txt(moduleName.__name__, color="cyan")}":')
         for i, func in enumerate(moduleName.func_list):
             print("   {}: {}".format(i, func.__name__))
 
