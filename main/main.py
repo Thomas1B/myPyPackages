@@ -1,8 +1,6 @@
 # Modules for master functions.
 
 import numpy as np
-import time
-import os
 import inspect
 from myPrints import color_txt
 
