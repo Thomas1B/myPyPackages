@@ -1,4 +1,4 @@
-from .mainFunctions import (
+from .main import (
     func_list,
     show_docString,
     show_modules,
