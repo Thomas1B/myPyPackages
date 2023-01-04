@@ -6,17 +6,22 @@ import numpy as np
 from main import show_modules, show_docString
 from myPrints import clear_screen, quit_program
 
-# ******************************* ******************************* 
+# ******************************* *******************************
 
 # These need to be identical.
-import main, myData, myPrints, mySignal, myStats, mySystem
+import main
+import myData
+import myPrints
+import mySignal
+import myStats
+import mySystem
 modules = [main, myData, myPrints, mySignal, myStats, mySystem]
 
 
 ids = np.arange(len(modules))
 sets = np.dstack([ids, modules])[0]
 
-# ******************************* ******************************* 
+# ******************************* *******************************
 
 
 def show_commands():
@@ -60,14 +65,15 @@ def show_doc(id):
                 txt += f'{i} - {func.__name__}\n'
             print(txt)
             show_doc(id)
-        else: print()
+        else:
+            print()
     clear_screen()
 
-# ******************************* ******************************* 
+# ******************************* *******************************
 
 
 clear_screen()
-while(True):
+while (True):
     show_commands()
     user = input("Command: ")
     match user:
@@ -88,12 +94,12 @@ while(True):
         case "3":
             clear_screen()
             show_functions(3)
-            show_doc(3)            
+            show_doc(3)
         case "4":
             clear_screen()
             show_functions(4)
-            show_doc(4)                                                
+            show_doc(4)
         case "5":
             clear_screen()
             show_functions(5)
-            show_doc(5)            
+            show_doc(5)
