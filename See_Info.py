@@ -6,6 +6,8 @@ import numpy as np
 from main import show_modules, show_docString
 from myPrints import clear_screen, quit_program
 
+# ******************************* ******************************* 
+
 # These need to be identical.
 import main, myData, myPrints, mySignal, myStats, mySystem
 modules = [main, myData, myPrints, mySignal, myStats, mySystem]
@@ -38,14 +40,12 @@ def show_functions(id):
     show_modules(name)
     print("\n")
 
+
 def show_doc(id):
     '''
     Function to show doc strings.
     '''
-
     module = sets[id][1]
-
-    # for _ in module.func_list:
     print('\nEnter the number of the function to see its docstring.')
     print("Leave blank to skip\n")
     user = input('Command: ')
@@ -60,7 +60,6 @@ def show_doc(id):
                 txt += f'{i} - {func.__name__}\n'
             print(txt)
             show_doc(id)
-        # else: break
         else: print()
     clear_screen()
 
@@ -81,15 +80,20 @@ while(True):
         case "1":
             clear_screen()
             show_functions(1)
+            show_doc(1)
         case "2":
             clear_screen()
             show_functions(2)
+            show_doc(2)
         case "3":
             clear_screen()
             show_functions(3)
+            show_doc(3)            
         case "4":
             clear_screen()
-            show_functions(4)                                    
+            show_functions(4)
+            show_doc(4)                                                
         case "5":
             clear_screen()
             show_functions(5)
+            show_doc(5)            
