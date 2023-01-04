@@ -96,6 +96,8 @@ def print_color(s, color=None, highlight=None, attrs=None, **kwargs):
         attrs (list of str): styles to be applied to text.
             options: bold, underline, dark, reverse, concealed, blink.
 
+        **kwargs: kwargs for print function.
+
         Example: 
             print_color('Hello, World!', 'red', 'blue', ['bold', 'blink'])
     '''
