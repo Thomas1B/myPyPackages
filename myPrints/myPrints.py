@@ -112,6 +112,31 @@ def warning(color='red', highlight='yellow'):
     print_color("*** Warning ***", color=color, highlight=highlight)
 
 
+def scroll_str(s, newline=True, delay=25):
+    '''
+    Function to print a string char by char. (Simulates scrolling)
+
+    Parameters:
+        s (str): string to print.
+        newline (bool - optional): after the last character make a newline.
+        delay (float - optional): time delay between each character in milliseconds.
+    '''
+    if newline:
+        for i, char in enumerate(s):
+            if not i+1 == len(s):
+                print(char, end='', flush=True)
+            else:
+                print(char)
+            time.sleep(delay/1000)
+    else:
+        for i, char in enumerate(s):
+            if not i+1 == len(s):
+                print(char, end='', flush=True)
+            else:
+                print(char, end=' ')
+            time.sleep(delay/1000)
+
+
 def clear_screen():
     '''
     Function to clear the terminal screen.
@@ -147,6 +172,7 @@ func_list = [
     color_txt,
     print_color,
     warning,
+    scroll_str,
     clear_screen,
     quit_program
 ]
